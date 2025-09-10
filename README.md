@@ -1,5 +1,5 @@
 
-# Meta-QAOA (PennyLane) — Professional Refactor
+# Meta-QAOA (PennyLane)
 
 This repository compares **Meta-QAOA** (with entanglement-capable circuits) against a simple
 **classical product baseline** for a *per-edge parametrized* weighted Max-Cut family.
