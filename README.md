@@ -11,7 +11,7 @@ It supports **CVaR** evaluation via sampling and **Expected Energy** via analyti
 - Meta parameterization: Polynomial + RBF map `g(λ)`
 - ES meta-training with optional inner SPSA step to encourage few-shot adaptation
 - Evaluation on ID and OOD splits; Time-to-Target (TTT), Zero-/Few-Shot curves
-- Plots and CSV exports; neutral **metrics.json** summary (no special wording)
+- Plots and CSV exports; neutral **metrics.json** summary
 
 ## Install
 ```bash
