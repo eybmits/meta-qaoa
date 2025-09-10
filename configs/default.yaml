@@ -1,0 +1,28 @@
+
+# Default experiment config
+N: 8
+p: 0.4
+p_ood: 0.55
+num_train: 60
+num_test_id: 8
+num_test_ood: 8
+p_layers: 2
+shots: 2048
+deg: 2
+R: 5
+M: 8
+batch: 8
+es_eps: 0.08
+es_eta: 0.35
+a_meta: 0.08
+c_meta: 0.06
+K: 10
+a_spsa: 0.08
+c_spsa: 0.06
+classical_shots: 2048
+target: 0.98
+cvar_alpha: 1.0
+weight_mode: abs_floor   # choices: abs_floor, softplus, signed_norm
+eps_floor: 0.02
+seed: 1234
+outdir: outputs

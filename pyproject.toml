@@ -1,0 +1,38 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meta-qaoa"
+version = "0.1.0"
+description = "Meta-QAOA vs Classical Product baseline with CVaR option (PennyLane)"
+readme = "README.md"
+authors = [{ name = "Your Name" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "pennylane>=0.36",
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "matplotlib>=3.8"
+]
+
+[project.scripts]
+meta-qaoa = "meta_qaoa.cli:main"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+lint.select = ["E","F","I","N","UP"]
+lint.ignore = ["E203","E266","E501"]
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+addopts = "-q"
+
